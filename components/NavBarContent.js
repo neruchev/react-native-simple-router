@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   corner: {
-    flex: 1,
     justifyContent: 'center',
   },
 
@@ -259,7 +258,7 @@ class NavBarContent extends React.Component {
     }
 
     titleComponent = (
-      <View style={{ flex: 6 }}>
+      <View style={{ flex: 1 }}>
         {titleContent}
       </View>
     );

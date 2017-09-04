@@ -9,7 +9,7 @@ import {
 
 import { Navigator } from 'react-native-deprecated-custom-components';
 
-import EventEmitter from 'react-native/Libraries/EventEmitter/EventEmitter';
+import EventEmitter from 'react-native/Libraries/vendor/emitter/EventEmitter';
 
 import NavBarContainer from './components/NavBarContainer';
 import * as Styles from './styles';

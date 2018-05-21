@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Animated,
   Easing,
@@ -52,14 +53,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   corner: {
-    justifyContent: 'center',
-  },
-
-  alignLeft: {
-    alignItems: 'flex-start',
-  },
-  alignRight: {
-    alignItems: 'flex-end',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   buttonTextLeft: {
     marginLeft: 10,
@@ -190,7 +185,7 @@ class NavBarContent extends React.Component {
 
     if (Platform.OS === 'ios' || this.props.route.leftCorner || this.props.route.index > 0) {
       leftCorner = (
-        <View style={[styles.corner, styles.alignLeft]}>
+        <View style={styles.corner}>
           {leftCornerContent}
         </View>
       );
@@ -218,7 +213,7 @@ class NavBarContent extends React.Component {
 
     if (Platform.OS === 'ios' || this.props.route.rightCorner || this.props.route.index > 0) {
       rightCorner = (
-        <View style={[styles.corner, styles.alignRight]}>
+        <View style={styles.corner}>
           {rightCornerContent}
         </View>
       );

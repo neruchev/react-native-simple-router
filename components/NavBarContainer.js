@@ -25,9 +25,9 @@ const propTypes = {
   resetToRoute: PropTypes.func.isRequired,
   rightCorner: PropTypes.func,
   rightProps: PropTypes.object,
-  style: View.propTypes.style,
+  // style: View.propTypes.style,
   titleProps: PropTypes.object,
-  titleStyle: Text.propTypes.style,
+  // titleStyle: Text.propTypes.style,
   toBack: PropTypes.func.isRequired,
   toRoute: PropTypes.func.isRequired,
 };

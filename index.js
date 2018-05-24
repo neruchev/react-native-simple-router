@@ -18,19 +18,19 @@ import _ from 'underscore';
 
 const propTypes = {
   backButtonComponent: PropTypes.func,
-  bgStyle: View.propTypes.style,
+  // bgStyle: View.propTypes.style,
   borderBottomWidth: PropTypes.number,
   borderColor: PropTypes.string,
   customAction: PropTypes.func,
   firstRoute: PropTypes.object.isRequired,
   handleBackAndroid: PropTypes.bool,
-  headerStyle: View.propTypes.style,
+  // headerStyle: View.propTypes.style,
   hideNavigationBar: PropTypes.bool,
   noStatusBar: PropTypes.bool,
   rightCorner: PropTypes.func,
   statusBarColor: PropTypes.string,
   statusBarProps: PropTypes.object,
-  titleStyle: Text.propTypes.style,
+  // titleStyle: Text.propTypes.style,
   sceneConfig: PropTypes.object,
 };
 
